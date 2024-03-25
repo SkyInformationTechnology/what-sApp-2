@@ -13,6 +13,17 @@
 		8C5837082B857CC400DB32F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5837062B857CC400DB32F1 /* Main.storyboard */; };
 		8C58370A2B857CC700DB32F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5837092B857CC700DB32F1 /* Assets.xcassets */; };
 		8C58370D2B857CC700DB32F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C58370B2B857CC700DB32F1 /* LaunchScreen.storyboard */; };
+		8C5837162B8587F100DB32F1 /* firstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5837142B8587F100DB32F1 /* firstTableViewCell.swift */; };
+		8C5837172B8587F100DB32F1 /* firstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5837152B8587F100DB32F1 /* firstTableViewCell.xib */; };
+		8C58371A2B85880E00DB32F1 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5837182B85880E00DB32F1 /* SecondTableViewCell.swift */; };
+		8C58371B2B85880E00DB32F1 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5837192B85880E00DB32F1 /* SecondTableViewCell.xib */; };
+		8C58371E2B85882800DB32F1 /* thirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C58371C2B85882800DB32F1 /* thirdTableViewCell.swift */; };
+		8C58371F2B85882800DB32F1 /* thirdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C58371D2B85882800DB32F1 /* thirdTableViewCell.xib */; };
+		8C5837222B85884400DB32F1 /* ForthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5837202B85884400DB32F1 /* ForthTableViewCell.swift */; };
+		8C5837232B85884400DB32F1 /* ForthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5837212B85884400DB32F1 /* ForthTableViewCell.xib */; };
+		C4A4B11A2B8A665E005BAFB8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A4B1192B8A665E005BAFB8 /* HomeVC.swift */; };
+		C4A4B11D2B8A66B6005BAFB8 /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A4B11B2B8A66B6005BAFB8 /* HomeCollectionCell.swift */; };
+		C4A4B11E2B8A66B6005BAFB8 /* HomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A4B11C2B8A66B6005BAFB8 /* HomeCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		8C5837092B857CC700DB32F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C58370C2B857CC700DB32F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C58370E2B857CC700DB32F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C5837142B8587F100DB32F1 /* firstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstTableViewCell.swift; sourceTree = "<group>"; };
+		8C5837152B8587F100DB32F1 /* firstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = firstTableViewCell.xib; sourceTree = "<group>"; };
+		8C5837182B85880E00DB32F1 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		8C5837192B85880E00DB32F1 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		8C58371C2B85882800DB32F1 /* thirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdTableViewCell.swift; sourceTree = "<group>"; };
+		8C58371D2B85882800DB32F1 /* thirdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = thirdTableViewCell.xib; sourceTree = "<group>"; };
+		8C5837202B85884400DB32F1 /* ForthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthTableViewCell.swift; sourceTree = "<group>"; };
+		8C5837212B85884400DB32F1 /* ForthTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForthTableViewCell.xib; sourceTree = "<group>"; };
+		C4A4B1192B8A665E005BAFB8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C4A4B11B2B8A66B6005BAFB8 /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		C4A4B11C2B8A66B6005BAFB8 /* HomeCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,106 @@
 		8C5836FF2B857CC400DB32F1 /* what'sApp */ = {
 			isa = PBXGroup;
 			children = (
+				C4A4B1132B8A659C005BAFB8 /* Model */,
+				C4A4B1122B8A6597005BAFB8 /* View */,
+				C4A4B1112B8A658F005BAFB8 /* Controller */,
+				C4A4B1152B8A65E6005BAFB8 /* Chats */,
+				C4A4B1142B8A65D2005BAFB8 /* Settings */,
 				8C5837002B857CC400DB32F1 /* AppDelegate.swift */,
 				8C5837022B857CC400DB32F1 /* SceneDelegate.swift */,
 				8C5837042B857CC400DB32F1 /* ViewController.swift */,
+				8C5837142B8587F100DB32F1 /* firstTableViewCell.swift */,
+				8C5837152B8587F100DB32F1 /* firstTableViewCell.xib */,
+				8C5837182B85880E00DB32F1 /* SecondTableViewCell.swift */,
+				8C5837192B85880E00DB32F1 /* SecondTableViewCell.xib */,
+				8C58371C2B85882800DB32F1 /* thirdTableViewCell.swift */,
+				8C58371D2B85882800DB32F1 /* thirdTableViewCell.xib */,
+				8C5837202B85884400DB32F1 /* ForthTableViewCell.swift */,
+				8C5837212B85884400DB32F1 /* ForthTableViewCell.xib */,
 				8C5837062B857CC400DB32F1 /* Main.storyboard */,
 				8C5837092B857CC700DB32F1 /* Assets.xcassets */,
 				8C58370B2B857CC700DB32F1 /* LaunchScreen.storyboard */,
 				8C58370E2B857CC700DB32F1 /* Info.plist */,
 			);
 			path = "what'sApp";
+			sourceTree = "<group>";
+		};
+		C4A4B10F2B8A656E005BAFB8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C4A4B1182B8A6618005BAFB8 /* Model */,
+				C4A4B1172B8A6613005BAFB8 /* View */,
+				C4A4B1162B8A6608005BAFB8 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C4A4B1102B8A6577005BAFB8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C4A4B11B2B8A66B6005BAFB8 /* HomeCollectionCell.swift */,
+				C4A4B11C2B8A66B6005BAFB8 /* HomeCollectionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C4A4B1112B8A658F005BAFB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4A4B10F2B8A656E005BAFB8 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4A4B1122B8A6597005BAFB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4A4B1132B8A659C005BAFB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4A4B1142B8A65D2005BAFB8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C4A4B1152B8A65E6005BAFB8 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		C4A4B1162B8A6608005BAFB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4A4B1192B8A665E005BAFB8 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4A4B1172B8A6613005BAFB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4A4B1102B8A6577005BAFB8 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4A4B1182B8A6618005BAFB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +240,12 @@
 			files = (
 				8C58370D2B857CC700DB32F1 /* LaunchScreen.storyboard in Resources */,
 				8C58370A2B857CC700DB32F1 /* Assets.xcassets in Resources */,
+				8C5837232B85884400DB32F1 /* ForthTableViewCell.xib in Resources */,
+				8C58371B2B85880E00DB32F1 /* SecondTableViewCell.xib in Resources */,
+				C4A4B11E2B8A66B6005BAFB8 /* HomeCollectionCell.xib in Resources */,
+				8C5837172B8587F100DB32F1 /* firstTableViewCell.xib in Resources */,
 				8C5837082B857CC400DB32F1 /* Main.storyboard in Resources */,
+				8C58371F2B85882800DB32F1 /* thirdTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C5837052B857CC400DB32F1 /* ViewController.swift in Sources */,
+				C4A4B11D2B8A66B6005BAFB8 /* HomeCollectionCell.swift in Sources */,
+				C4A4B11A2B8A665E005BAFB8 /* HomeVC.swift in Sources */,
+				8C58371E2B85882800DB32F1 /* thirdTableViewCell.swift in Sources */,
+				8C5837222B85884400DB32F1 /* ForthTableViewCell.swift in Sources */,
+				8C58371A2B85880E00DB32F1 /* SecondTableViewCell.swift in Sources */,
 				8C5837012B857CC400DB32F1 /* AppDelegate.swift in Sources */,
+				8C5837162B8587F100DB32F1 /* firstTableViewCell.swift in Sources */,
 				8C5837032B857CC400DB32F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TU93N69J7H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "what'sApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,7 +424,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abc.what-sApp";
+				PRODUCT_BUNDLE_IDENTIFIER = net.test.abc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,6 +439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TU93N69J7H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "what'sApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,7 +452,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.abc.what-sApp";
+				PRODUCT_BUNDLE_IDENTIFIER = net.test.abc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -1,24 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qxu-ZE-n6n">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="what_sApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekE-Mj-SdI">
+                                <rect key="frame" x="0.0" y="54" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="WhatsApp" id="kP5-j1-Ywb"/>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NMq-fm-38V">
+                                <rect key="frame" x="0.0" y="103" width="414" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Chats "/>
+                                    <segment title="Updates"/>
+                                    <segment title="calls"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segbutonLable:" destination="BYZ-38-t0r" eventType="valueChanged" id="nTP-t7-Mx3"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6R7-qX-KeP">
+                                <rect key="frame" x="0.0" y="134" width="414" height="728"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NMq-fm-38V" secondAttribute="trailing" id="7hb-44-TXa"/>
+                            <constraint firstItem="ekE-Mj-SdI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="7kK-rS-4AN"/>
+                            <constraint firstItem="ekE-Mj-SdI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F8i-IZ-bHh"/>
+                            <constraint firstItem="NMq-fm-38V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M3t-Cc-j7c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6R7-qX-KeP" secondAttribute="bottom" id="NbF-QC-zVb"/>
+                            <constraint firstItem="6R7-qX-KeP" firstAttribute="leading" secondItem="NMq-fm-38V" secondAttribute="leading" id="arO-nb-bfm"/>
+                            <constraint firstItem="6R7-qX-KeP" firstAttribute="top" secondItem="NMq-fm-38V" secondAttribute="bottom" id="jhI-Cd-wrW"/>
+                            <constraint firstItem="6R7-qX-KeP" firstAttribute="trailing" secondItem="NMq-fm-38V" secondAttribute="trailing" id="kid-Te-GBn"/>
+                            <constraint firstItem="ekE-Mj-SdI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lsj-Th-Hrm"/>
+                            <constraint firstItem="NMq-fm-38V" firstAttribute="top" secondItem="ekE-Mj-SdI" secondAttribute="bottom" constant="5" id="raG-0l-x8d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="navbarLabel" destination="ekE-Mj-SdI" id="S7J-Pk-6GZ"/>
+                        <outlet property="segmentLabel" destination="NMq-fm-38V" id="q5U-7M-SCe"/>
+                        <outlet property="tableviewLable" destination="6R7-qX-KeP" id="WMF-kO-qtI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="82"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="hU9-h3-oFe">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="qxu-ZE-n6n" customClass="HomeVC" customModule="what_sApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SEF-7X-VnX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i5Q-bC-rcA">
+                                <rect key="frame" x="0.0" y="120" width="414" height="776"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mop-C0-h5T">
+                                    <size key="itemSize" width="186" height="173"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mi-t5-YwC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jrk-MA-uCr">
+                                        <rect key="frame" x="0.0" y="89" width="414" height="32"/>
+                                        <segments>
+                                            <segment title="Groups"/>
+                                            <segment title="Chats "/>
+                                            <segment title="Updates"/>
+                                            <segment title="calls"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="optionSegmentActions:" destination="qxu-ZE-n6n" eventType="valueChanged" id="vd3-HB-aRY"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstItem="jrk-MA-uCr" firstAttribute="leading" secondItem="3mi-t5-YwC" secondAttribute="leading" id="JWx-qB-aCs"/>
+                                    <constraint firstAttribute="bottom" secondItem="jrk-MA-uCr" secondAttribute="bottom" id="Pba-E6-6QL"/>
+                                    <constraint firstAttribute="trailing" secondItem="jrk-MA-uCr" secondAttribute="trailing" id="dOT-MT-7ZE"/>
+                                    <constraint firstAttribute="height" constant="120" id="ofF-x8-kaP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pfc-7L-zyz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3mi-t5-YwC" firstAttribute="top" secondItem="SEF-7X-VnX" secondAttribute="top" id="6Wu-r7-Hc0"/>
+                            <constraint firstItem="i5Q-bC-rcA" firstAttribute="leading" secondItem="Pfc-7L-zyz" secondAttribute="leading" id="GIx-Q8-jPM"/>
+                            <constraint firstItem="3mi-t5-YwC" firstAttribute="leading" secondItem="Pfc-7L-zyz" secondAttribute="leading" id="VbP-SL-aJL"/>
+                            <constraint firstAttribute="bottom" secondItem="i5Q-bC-rcA" secondAttribute="bottom" id="d8Z-ah-04h"/>
+                            <constraint firstItem="i5Q-bC-rcA" firstAttribute="top" secondItem="3mi-t5-YwC" secondAttribute="bottom" id="fRT-GF-FS3"/>
+                            <constraint firstItem="3mi-t5-YwC" firstAttribute="trailing" secondItem="Pfc-7L-zyz" secondAttribute="trailing" id="tNh-iN-KIv"/>
+                            <constraint firstItem="i5Q-bC-rcA" firstAttribute="trailing" secondItem="Pfc-7L-zyz" secondAttribute="trailing" id="tOl-Vm-z7M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="homeCollectionView" destination="i5Q-bC-rcA" id="cKz-mP-v8k"/>
+                        <outlet property="segmentOptions" destination="jrk-MA-uCr" id="OxT-ch-x76"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7C-Nh-p7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="82"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

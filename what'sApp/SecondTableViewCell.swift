@@ -9,9 +9,16 @@ import UIKit
 
 class SecondTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLable: UILabel!
+    @IBOutlet weak var photolable: UIImageView!
+    @IBOutlet weak var dayLable: UILabel!
+    @IBOutlet weak var unseenLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
